@@ -1,4 +1,4 @@
-# deekshya
+# Deekshya - An Initiation
 
 Our idea starts from an experience where my(Laxman) uncle had to amputate his leg due to an accident while mountain climbing and a friend's parent had to do bypass surgery on his heart. They both needed fresh blood not stored in the blood banks during that time. The only medium to ask people to donate blood was personal contacts or social media campaigns. I donated blood to my friend's parents, but due to rh-incompatibility and blood restoring period, I couldn't help my uncle. Luckily, few people raised from Social Media agreed to donate.
 
