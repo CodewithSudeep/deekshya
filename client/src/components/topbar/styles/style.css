@@ -1,0 +1,25 @@
+.topbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 6vw;
+  flex-wrap: wrap;
+  border-bottom: .3px solid #9a9a9a;
+  font-size: 14px; }
+  .topbar__container .topbar__container__socialLinks, .topbar__container .topbar__container__contactInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px; }
+    .topbar__container .topbar__container__socialLinks ul, .topbar__container .topbar__container__contactInfo ul {
+      list-style: none;
+      display: flex;
+      gap: 10px; }
+      .topbar__container .topbar__container__socialLinks ul li a, .topbar__container .topbar__container__contactInfo ul li a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold; }
+    .topbar__container .topbar__container__socialLinks .contact, .topbar__container .topbar__container__contactInfo .contact {
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 5px; }
