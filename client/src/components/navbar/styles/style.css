@@ -1,17 +1,23 @@
 .navbar__container {
   display: flex;
+  background: #3494E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EC6EAD, #3494E6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  z-index: 2;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 0 6vw;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   position: relative; }
   .navbar__container h3 {
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: bold;
     margin: 0;
     font-family: "Poppins", sans-serif;
-    color: #27ae60; }
+    color: #fff; }
   .navbar__container ul {
     display: flex;
     align-items: center;
@@ -22,20 +28,20 @@
         padding: 15px 0; }
       .navbar__container ul.navbar__container__auth a {
         text-decoration: none;
-        color: #000;
+        color: #fff;
         display: flex;
         align-items: center;
-        gap: 5px; }
+        gap: 5px;
+        font-weight: 600; }
         .navbar__container ul.navbar__container__auth a.auth__signup {
-          border: 1px solid #27ae60;
-          color: #27ae60;
-          font-weight: 500;
+          border: 1px solid #fff;
+          color: #fff;
           padding: 10px 20px;
           border-radius: 3px;
           transition: all 0.3s ease; }
           .navbar__container ul.navbar__container__auth a.auth__signup:hover {
-            background: #27ae60;
-            color: #fff; }
+            background: #fff;
+            color: #000; }
   .navbar__container .navbar__container__center {
     position: absolute;
     top: 50%;
@@ -46,10 +52,8 @@
       .navbar__container .navbar__container__center .navbar__container__navlinks li a {
         padding: 24px 15px;
         text-decoration: none;
-        color: #000; }
+        color: #fff; }
         .navbar__container .navbar__container__center .navbar__container__navlinks li a.active {
-          color: #27ae60;
-          border-bottom: 2px solid #27ae60;
-          font-weight: 500; }
+          font-weight: 600; }
 
 /*# sourceMappingURL=style.css.map */
