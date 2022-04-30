@@ -2,17 +2,10 @@
   .home__container__landing {
     position: relative;
     min-height: 68vh;
-    background: #3494e6; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #ec6ead,
-      #3494e6
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #ec6ead,
-      #3494e6
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // background: #000;
+    background: url('https://images.unsplash.com/photo-1478860409698-8707f313ee8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80') no-repeat center center;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, .45);
 
     @media (min-width: 992px) {
       .topLeftImage {
@@ -43,7 +36,7 @@
       border-radius: 150px 0 0 0;
       background: url("https://images.unsplash.com/photo-1615461066841-6116e61058f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2183&q=80");
       background-size: cover;
-      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
     }
     .bottomRightImage {
       width: 20vw;
