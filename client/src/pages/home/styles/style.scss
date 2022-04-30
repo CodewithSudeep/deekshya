@@ -2,21 +2,24 @@
   font-family: "Poppins", sans-serif;
 
   // section => landing
-  .home__landing{
+  .home__landing {
     display: flex;
     height: 79vh;
-    background-image: url('https://pngimage.net/wp-content/uploads/2018/06/noice-png-5.png');
+    background-image: url("https://pngimage.net/wp-content/uploads/2018/06/noice-png-5.png");
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
     align-items: center;
     justify-content: center;
     padding: 5vh 3vw;
     gap: 50px;
+    flex-wrap: wrap;
 
-    *{
+    * {
       font-family: "Playfair Display", serif;
     }
 
-    .left, .center, .right{
+    .left,
+    .center,
+    .right {
       flex: 1 1 0;
       height: 90%;
       display: flex;
@@ -26,25 +29,29 @@
       color: #fff;
       gap: 50px;
 
-      h1{
+      h1 {
         font-size: 2.5rem;
       }
 
-      img{
+      img {
         width: 100%;
         height: 500px;
         object-fit: cover;
       }
     }
 
-    .center{
-      img{
+    .center {
+      @media (max-width: 768px) {
+        display: none;
+      }
+
+      img {
         height: 100%;
       }
     }
 
-    .right{
-      p{
+    .right {
+      p {
         margin: 0 20px;
         line-height: 1.5;
         font-size: 22px;
@@ -55,11 +62,9 @@
 
   // section => banner
   .home__container__banner {
-    background: rgba(255, 255, 255, 0.22);
+    background: #fff;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.3px);
-    -webkit-backdrop-filter: blur(6.3px);
     margin: 100px 10vw;
     display: flex;
     align-items: center;
@@ -105,6 +110,48 @@
             font-size: 15px;
             line-height: 1.5;
           }
+        }
+      }
+    }
+  }
+
+  // section => what can you achieve
+  .home__container__whatCanYouDo {
+    margin: 0 5vw;
+    text-align: center;
+
+    h1 {
+      font-size: 2.5em;
+      font-family: "Playfair Display", serif;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      margin: 0 auto;
+      width: 60vw;
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
+
+    .home__container__whatCanYouDo__contents {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      margin-top: 30px;
+
+      .item {
+        flex: 1 1 0;
+
+        h2{
+          font-size: 1.5em;
+          font-family: "Playfair Display", serif;
+        }
+
+        img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
         }
       }
     }
