@@ -1,79 +1,111 @@
 .home__container {
-  .home__container__landing {
-    position: relative;
-    min-height: 68vh;
-    // background: #000;
-    background: url('https://images.unsplash.com/photo-1478860409698-8707f313ee8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80') no-repeat center center;
-    background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, .45);
+  font-family: "Poppins", sans-serif;
 
-    @media (min-width: 992px) {
-      .topLeftImage {
-        width: 20vw;
-        height: 40vh;
-        object-fit: cover;
-        border-radius: 0 0 150px 150px;
-        position: absolute;
-        top: -3vh;
-        left: -4vw;
-      }
-    }
-    @media (max-width: 991px) {
-      .topLeftImage,
-      .bottomRightImage {
-        display: none;
-      }
+  // section => landing
+  .home__landing{
+    display: flex;
+    height: 79vh;
+    background-image: url('https://pngimage.net/wp-content/uploads/2018/06/noice-png-5.png');
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 3vw;
+    gap: 50px;
+
+    *{
+      font-family: "Playfair Display", serif;
     }
 
-    .centerImage {
-      position: absolute;
-      top: 8%;
-      left: 50%;
-      transform: translate(-50%);
-      width: 28vw;
-      height: 70vh;
-      object-fit: cover;
-      border-radius: 150px 0 0 0;
-      background: url("https://images.unsplash.com/photo-1615461066841-6116e61058f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2183&q=80");
-      background-size: cover;
-      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
-    }
-    .bottomRightImage {
-      width: 20vw;
-      height: 40vh;
-      object-fit: cover;
-      border-radius: 150px 150px 0 0;
-      position: absolute;
-      bottom: -7vh;
-      right: -4vw;
-    }
-
-    .landing__content {
-      position: absolute;
-      top: 49%;
-      left: 50%;
-      transform: translate(-50%);
+    .left, .center, .right{
+      flex: 1 1 0;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
       color: #fff;
-      font-weight: bold;
-      letter-spacing: 0.1rem;
-      line-height: 1;
-      font-size: 1.7rem;
+      gap: 50px;
 
-      .landing__content__title {
-        font-family: "Caveat", cursive;
-        text-align: right;
+      h1{
+        font-size: 2.5rem;
       }
 
-      .landing__content__subtitle {
-        font-size: 6.5rem;
+      img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+    }
+
+    .center{
+      img{
+        height: 100%;
+      }
+    }
+
+    .right{
+      p{
+        margin: 0 20px;
+        line-height: 1.5;
+        font-size: 22px;
         text-align: center;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 4px;
-        -webkit-text-stroke-color: #fff;
+      }
+    }
+  }
+
+  // section => banner
+  .home__container__banner {
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    margin: 100px 10vw;
+    display: flex;
+    align-items: center;
+    padding: 3vw 4vw;
+    gap: 45px;
+
+    .home__container__banner__image,
+    .home__container__banner__content {
+      flex: 1 1 0;
+
+      img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        border-radius: 16px;
       }
 
-      .landing__content__footertitle {
-        font-family: "Caveat", cursive;
+      h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5em;
+      }
+
+      .initiator {
+        font-size: 1.2em;
+      }
+
+      .divider {
+        width: 50px;
+        height: 5px;
+        margin: 20px 0 20px 0;
+        background: #000;
+      }
+
+      .message__item {
+        margin-bottom: 20px;
+        .message__content {
+          h3 {
+            margin-bottom: 5px;
+            font-family: "Playfair Display", serif;
+          }
+
+          .content {
+            font-size: 15px;
+            line-height: 1.5;
+          }
+        }
       }
     }
   }
