@@ -2,6 +2,7 @@ import React from "react";
 import "./styles/style.css";
 
 import Lex from "../../assets/lex.webp";
+import Topics from '../../utils/topics.json'
 
 export default function Home() {
   return (
@@ -113,6 +114,24 @@ export default function Home() {
             />
             <h2>Campaigns</h2>
           </div>
+        </div>
+      </div>
+
+      {/**
+       * @section => topics
+       */}
+      <div className="home__container__topics">
+        <span>ALL WORLD</span>
+        <h1>Find out for yourself in variety of topics</h1>
+        <div className="topics">
+            {
+              Topics.map((topic, index) => (
+                <div className="topic__item" key={index}>
+                  <i style={{background: topic.background, borderRadius: index % 2 == 0 ? 5 : "50%"}} className={topic.icon}></i>
+                  <p>{topic.title}</p>
+                  </div>
+              ))
+            }
         </div>
       </div>
     </div>
